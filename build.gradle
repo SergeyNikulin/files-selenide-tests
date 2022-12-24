@@ -19,24 +19,24 @@ repositories {
     mavenCentral()
 }
 
-def selenideVersion = "6.9.0",
+def selenideVersion = "6.10.3",
     junitVersion = "5.9.1"
 
 dependencies {
     // Selenide
     testImplementation (
             "com.codeborne:selenide:$selenideVersion",
-            "com.codeborne:pdf-test:1.6.1",
+            "com.codeborne:pdf-test:1.7.0",
             "com.codeborne:xls-test:1.4.3",
-            "com.opencsv:opencsv:5.3",
-            "org.assertj:assertj-core:3.19.0",
-            "io.qameta.allure:allure-selenide:2.15.0",
-            "org.apache.poi:poi:5.0.0",
-            "org.apache.poi:poi-ooxml:5.0.0",
-            "org.apache.poi:poi-ooxml-full:5.0.0",
+            "com.opencsv:opencsv:5.7.1",
+            "org.assertj:assertj-core:3.23.1",
+            "io.qameta.allure:allure-selenide:2.20.0",
+            "org.apache.poi:poi:5.2.2",
+            "org.apache.poi:poi-ooxml:5.2.2",
+            "org.apache.poi:poi-ooxml-full:5.2.2",
             "commons-io:commons-io:2.11.0",
             "net.lingala.zip4j:zip4j:1.3.2")
-    testRuntimeOnly("org.slf4j:slf4j-simple:1.7.29")
+    testRuntimeOnly("org.slf4j:slf4j-simple:2.0.5")
 
     //JUnit 5
     testImplementation(
